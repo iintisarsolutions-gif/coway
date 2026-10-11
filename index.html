@@ -404,15 +404,15 @@
             color: var(--text-muted);
         }
 
-        /* Features Section */
+       /* Features Section - Responsif Penuh untuk Semua Peranti */
         .features-grid {
             display: grid;
-            /* Default untuk Layar HP: 1 kolom ke bawah */
+            /* 1. Paparan Telefon (Mobile): 1 kolum ke bawah */
             grid-template-columns: 1fr;
             gap: 1.25rem;
         }
 
-        /* Untuk Layar Tablet (Lebar skrin 768px ke atas): 2 kolom */
+        /* 2. Paparan Tablet (Skrin 768px ke atas): 2 kolum sebaris */
         @media (min-width: 768px) {
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -420,7 +420,7 @@
             }
         }
 
-        /* Untuk Layar Laptop / Desktop (Lebar skrin 1024px ke atas): 4 kolom sejajar */
+        /* 3. Paparan Laptop / Desktop (Skrin 1024px ke atas): 4 kolum sejajar */
         @media (min-width: 1024px) {
             .features-grid {
                 grid-template-columns: repeat(4, 1fr);
