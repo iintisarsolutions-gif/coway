@@ -770,9 +770,18 @@
         /* Interactive Consultation Form Section */
         .consult-grid {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 3rem;
+            /* Paparan Mobile/Telefon: 1 kolum ke bawah (elak terkeluar) */
+            grid-template-columns: 1fr;
+            gap: 2rem;
             align-items: start;
+        }
+
+        /* Paparan Laptop / Desktop: Kekal 100% susunan asal anda (2 kolum) */
+        @media (min-width: 1024px) {
+            .consult-grid {
+                grid-template-columns: 1fr 1.2fr;
+                gap: 3rem;
+            }
         }
 
         .form-card {
